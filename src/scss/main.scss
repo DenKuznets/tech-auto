@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
+  url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+}
+@import "utils/_index.scss";
+@import "layouts/_index";
+@import "UI/_index";
+//@import "components/_index";
+//@import "sections/_index";

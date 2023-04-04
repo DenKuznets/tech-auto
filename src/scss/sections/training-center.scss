@@ -1,0 +1,108 @@
+#training-center {
+
+}
+
+.training-center {
+    &__title {
+        font-size: 40px;
+        line-height: 41px;
+        text-align: center;
+        color: #030011;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+
+    &__info {
+        @media (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: center;
+        }
+
+        &-text {
+            font-size: 17px;
+            line-height: 140%;
+            color: #030011;
+
+            @media (max-width: 1023px) {
+                text-align: center;
+            }
+        }
+
+        &-list {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            @media (max-width: 520px) {
+                display: flex;
+                flex-direction: column;
+                row-gap: 40px;
+                align-items: center;
+            }
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            @media (max-width: 520px) {
+                flex-direction: row;
+                column-gap: 10px;
+                align-items: center;
+            }
+
+            &-number {
+                font-family: 'XXII DONT-MESS-WITH-VIKINGS';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 61px;
+                background: linear-gradient(93.4deg, #0F00B6 0%, #0009E8 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            &-text {
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 140%;
+                color: #030011;
+            }
+        }
+    }
+
+    &__list {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+
+        &-item {
+            background: url(/assets/img/bulit-blue.svg) no-repeat 0 0px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 46px;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 140%;
+            color: #030011;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.headerFixed.navbar_scrolled {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(194, 196, 199, 0.5);
+    transition: transform 2s ease ;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    //transform: translateY(-100px);
+    animation-name: fadeInNavbar;
+    animation-duration: 1s;
+}
+
+.header__nav-button.navbar_scrolled {
+    display: none;
+}
+
+.header__nav.active {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+}
+
+@keyframes fadeInNavbar {
+    from {
+        opacity: 0;
+        top: -100px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}

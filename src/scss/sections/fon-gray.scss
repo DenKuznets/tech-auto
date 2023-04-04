@@ -1,0 +1,12 @@
+.fon-gray {
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
+    background: #FBFBFC;
+    padding-top: 80px;
+    padding-bottom: 300px;
+
+    @media (max-width: 1290px) {
+        padding-bottom: 80px;
+    }
+}

@@ -1,0 +1,95 @@
+footer {
+    margin-top: 38px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+
+            a {
+                text-align: center;
+            }
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 27px;
+            color: #2D2D2D;
+
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__container {
+        @media (max-width: 767px) {
+            margin-top: 50px;
+        }
+    }
+
+    &__card {
+        margin-top: 30px;
+        text-align: right;
+
+        @media (max-width: 767px) {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+
+    &__politics {
+        margin-top: 21px;
+        text-align: right;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
+        &-link {
+            text-align: right;
+            font-size: 16px;
+            line-height: 25px;
+            color: #2D2D2D;
+        }
+    }
+
+    &__development {
+        margin-top: 21px;
+        text-align: right;
+        font-size: 16px;
+        line-height: 25px;
+        color: #2D2D2D;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
+        &-link {
+            color: #2D2D2D;
+        }
+
+        &-br {
+            display: none;
+
+            @media (max-width: 365px) {
+                display: block;
+            }
+        }
+
+    }
+}

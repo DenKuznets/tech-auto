@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  column-gap: 30px;
+
+  &__list {
+    &-header {
+      a {
+        font-size: 18px;
+        color: #1e7ec6;
+        transition: all .15s ease;
+      }
+    }
+  }
+}

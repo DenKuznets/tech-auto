@@ -1,0 +1,14 @@
+.button {
+    padding: 14px;
+
+  &-catalog {
+    width: 100%;
+    background: #f47d2b;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+}

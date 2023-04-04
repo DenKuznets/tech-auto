@@ -1,0 +1,91 @@
+#first-screen {
+    background: url("../img/first-screen-bg-1.png");
+    padding-top: 113px;
+    padding-bottom: 62px;
+
+    @media (max-width: 1024px) {
+        background: url("../img/first-screen-bg-2.png") 100% 100% no-repeat;
+        background-position-x: left;
+        background-size: cover;
+        padding-top: 87px;
+        padding-bottom: 87px;
+    }
+
+    @media (max-width: 767px) {
+        background-position-x: center;
+    }
+
+    @media (max-width: 360px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.first-screen {
+    display: flex;
+    justify-content: end;
+
+    @media (max-width: 1024px) {
+        justify-content: start;
+    }
+
+    &__info {
+        width: 700px;
+
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+
+        &-title {
+            font-family: 'XXII DONT-MESS-WITH-VIKINGS';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 51px;
+            color: #FFFFFF;
+
+            @media (max-width: 420px) {
+                text-align: center;
+            }
+
+            @media (max-width: 360px) {
+                font-size: 40px;
+                line-height: 41px;
+            }
+        }
+
+        &-text {
+            margin-top: 40px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+
+        &-list {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        &-item {
+            background: url(/assets/img/bulit.svg) no-repeat 0 4px;
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+
+        &-button {
+            display: flex;
+            margin-top: 40px;
+
+            @media (max-width: 360px) {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
