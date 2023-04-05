@@ -2,4 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../../img/masks/stages-mask.svg);
+  h2{
+    margin-bottom: 40px;
+  }
+  h4{
+    margin-bottom: 30px;
+  }
+}
+
+.stages__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 1290px;
+  row-gap: 50px;
+}
+
+.stages__card {
+  position: relative;
+
+}
+
+.stages__card-number {
+  position: absolute;
+  left: -40px;
+  top: -20px;
 }

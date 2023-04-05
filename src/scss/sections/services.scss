@@ -51,14 +51,14 @@
 
 .services__content {
   width: 100%;
-  padding-left: 285px;
+  max-width: 1351px;
 }
 
 .services__cards {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  width: 90%;
+  // width: 100%;
 }
 
 .services__card {
