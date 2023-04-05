@@ -1,0 +1,27 @@
+#about {
+  display: flex;
+  justify-content: center;
+  h2{
+    margin-bottom: 50px;
+  }
+}
+
+
+
+.about__text {
+  max-width: 630px;
+  margin-top: 60px;
+}
+
+.about__image{
+  margin-top: 40px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.about-dot1 {
+  left: 0;
+  top: 144px;
+}
