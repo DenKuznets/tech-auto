@@ -1,5 +1,9 @@
 #services {
-  
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .ellipse2 {
     left: 85px;
     top: 8px;
@@ -13,5 +17,79 @@
   .ellipse4 {
     left: 961px;
     top: 744px;
+  }
+
+  h2 {
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    padding-left: 30px;
+  }
+
+  h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 410px;
+    min-width: 410px;
+  }
+
+  p {
+    font-family: 'Open Sans';
+    max-width: 620px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    // outline: 1px solid red;
+  }
+}
+
+.services__content {
+  width: 100%;
+  padding-left: 285px;
+}
+
+.services__cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 90%;
+}
+
+.services__card {
+  display: flex;
+  gap: 40px;
+  padding: 20px 30px;
+  width: 100%;
+  transition: all 0.2s;
+  border-radius: 8px;
+  position: relative; 
+  
+  &__btn-cta {
+    transition: all 0.2s;
+    display: none;
+    width: 181px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #00AE31;
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+  }
+
+  &:hover{
+    background: #00AE31;
+    button {
+      display: block;
+    }
   }
 }
