@@ -1,0 +1,54 @@
+#hero {
+  background: url(../../img/masks/hero-mask.svg), linear-gradient(180deg, rgba(204, 209, 226, 0.9) 0%, rgba(204, 209, 226, 0) 100%);
+  display: flex;
+  justify-content: center;
+  gap: 101px;
+}
+
+.hero__text {
+  margin-top: 180px;
+  flex: 1;
+  max-width: 639px;
+
+  h1 {
+    font-family: 'AlumniSans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+
+  .btn-cta {
+    width: 181px;
+    height: 55px;
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    border-radius: 8px;
+    font-family: 'AlumniSans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+
+.hero__image {
+  margin-top: 20px;
+  flex: 1;
+  max-width: 550px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
