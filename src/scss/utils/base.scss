@@ -33,9 +33,30 @@ body {
     -moz-overflow-x: hidden;
     -ms-overflow-x: hidden;
     -o-overflow-x: hidden;
-    font-family: 'Alumni Sans';
+    font-family: 'Open Sans';
     background: #00110A;
     color: #fff;
+}
+
+h1,
+h2,
+a, 
+button {
+    font-family: 'Alumni Sans';
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
 }
 
 body.lock {
@@ -105,6 +126,7 @@ a {
 .ellipse3 {
     filter: blur(300px);
 }
+
 .ellipse4 {
     filter: blur(300px);
 }

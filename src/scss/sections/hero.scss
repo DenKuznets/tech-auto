@@ -2,17 +2,18 @@
   display: flex;
   justify-content: center;
   gap: 101px;
-  padding-top: 20px;
+  padding-top: 80px;
   position: relative;
+
   .ellipse2 {
-      left: 99px;
-      top: 43px;
-    }
-  
-    .ellipse1 {
-      left: 1180px;
-      top: 255px;
-    }
+    left: 99px;
+    top: 43px;
+  }
+
+  .ellipse1 {
+    left: 1180px;
+    top: 255px;
+  }
 }
 
 .hero__text {
@@ -69,12 +70,13 @@
   top: -180px;
   transform: rotate(90deg);
 }
+
 .hero-dot2 {
   left: 0;
   top: 580px;
 }
+
 .hero-dot3 {
-  left: 50px;
-  top: -450px;
-  transform: rotate(90deg);
+  left: 215px;
+  top: 3px;
 }
