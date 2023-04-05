@@ -1,8 +1,18 @@
 #hero {
-  background: url(../../img/masks/hero-mask.svg), linear-gradient(180deg, rgba(204, 209, 226, 0.9) 0%, rgba(204, 209, 226, 0) 100%);
   display: flex;
   justify-content: center;
   gap: 101px;
+  padding-top: 20px;
+  position: relative;
+  .ellipse2 {
+      left: 99px;
+      top: 43px;
+    }
+  
+    .ellipse1 {
+      left: 1180px;
+      top: 255px;
+    }
 }
 
 .hero__text {
@@ -11,7 +21,7 @@
   max-width: 639px;
 
   h1 {
-    font-family: 'AlumniSans';
+    font-family: 'Alumni Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -20,7 +30,7 @@
   }
 
   p {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -33,22 +43,24 @@
     height: 55px;
     background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
     border-radius: 8px;
-    font-family: 'AlumniSans';
+    font-family: 'Alumni Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
+    color: #fff;
   }
 }
 
 
 .hero__image {
-  margin-top: 20px;
   flex: 1;
   max-width: 550px;
 
   img {
+    position: relative;
     width: 100%;
     height: auto;
   }
 }
+

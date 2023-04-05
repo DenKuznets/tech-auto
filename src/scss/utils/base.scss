@@ -1,23 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'AlumniSans', sans-serif;
-    color: #fff;
+    // color: #fff;
 }
+
 /* Скролл бар */
-*{
+* {
     scrollbar-width: thin;
     scrollbar-color: rgb(71, 71, 71) rgba(108, 108, 108, 0.5);
 }
+
 *::-webkit-scrollbar {
     height: 14px;
     width: 10px;
 }
-*::-webkit-scrollbar-track{
+
+*::-webkit-scrollbar-track {
     background: rgba(108, 108, 108, 0.5);
 }
-*::-webkit-scrollbar-thumb{
+
+*::-webkit-scrollbar-thumb {
     background-color: rgb(136 136 136);
     border-radius: 3px;
     border: 10px solid rgb(136 136 136);
@@ -30,9 +33,9 @@ body {
     -moz-overflow-x: hidden;
     -ms-overflow-x: hidden;
     -o-overflow-x: hidden;
-    font-family: 'Montserrat', 'Roboto', sans-serif;
-    background: #ffffff;
-    padding-bottom: 25px;
+    font-family: 'Alumni Sans';
+    background: #00110A;
+    color: #fff;
 }
 
 body.lock {
@@ -81,6 +84,28 @@ a {
     position: absolute;
 }
 
+.bg1-2 {
+    background: url(../../img/masks/hero-mask.svg);
+}
 
+.ellipse {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+}
 
+.ellipse1 {
+    filter: blur(250px);
+}
 
+.ellipse2 {
+    filter: blur(300px);
+}
+
+.ellipse3 {
+    filter: blur(300px);
+}
+.ellipse4 {
+    filter: blur(300px);
+}
