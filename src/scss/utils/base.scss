@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-family: 'AlumniSans', sans-serif;
+    color: #fff;
 }
 /* Скролл бар */
 *{
@@ -40,6 +41,7 @@ body.lock {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .containers {
@@ -73,6 +75,10 @@ a {
 
 .animate__backInDown {
     animation-duration: .8s;
+}
+
+.dot {
+    position: absolute;
 }
 
 

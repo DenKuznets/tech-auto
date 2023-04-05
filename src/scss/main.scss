@@ -3,8 +3,31 @@
   src: url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
   url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
 }
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Bold.woff2'), url('../fonts/OpenSans-Bold.woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.woff2'), url('../fonts/OpenSans-Regular.woff');
+}
+@font-face {
+  font-family: 'AlumniSans';
+  src: url('../fonts/AlumniSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'AlumniSans';
+  src: url('../fonts/AlumniSans-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'AlumniSans';
+  src: url('../fonts/AlumniSans-Medium.ttf');
+}
+
+
 @import "utils/_index.scss";
 @import "layouts/_index";
 @import "UI/_index";
+@import "layouts/section.scss"
 //@import "components/_index";
 //@import "sections/_index";
