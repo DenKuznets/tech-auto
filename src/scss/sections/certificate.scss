@@ -3,9 +3,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 45px;
 
   h2 {
-    margin-bottom: 40px;
+    margin-top: 90px;
+    margin-bottom: 45px;
   }
 
   .ellipse2 {
@@ -18,4 +20,5 @@
   max-width: 1290px;
   display: flex;
   gap: 30px;
+  position: relative;
 }
