@@ -1,27 +1,37 @@
-#advantages{
+#advantages {
   display: flex;
   justify-content: center;
   min-height: unset;
-  // padding-bottom: 50px;
 }
+
 .advantages__cards {
   display: flex;
   flex: 1;
-  // align-items: flex-start;
   justify-content: space-between;
   min-height: auto;
-  // padding: 100px 0 50px 0;
-  // gap: 30px;
   max-width: 1290px;
+  position: relative;
+  left: -20px;
 }
 
-.card {
+.advantages__card {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  
+  position: relative;
+
   h4 {
-    margin-top: 8px;
+    margin-top: 5px;
     max-width: 320px;
+  }
+}
+
+.img-container {
+  position: relative;
+
+  .blur {
+    position: absolute;
+    top: -18px;
+    left: 16px;
   }
 }

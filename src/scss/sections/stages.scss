@@ -10,12 +10,17 @@
   }
 }
 
+.stages__content {
+  padding-top: 75px;
+}
+
 .stages__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-width: 1290px;
   row-gap: 50px;
+  column-gap: 50px;
 }
 
 .stages__card {

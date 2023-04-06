@@ -6,7 +6,7 @@
 
   .ellipse2 {
     left: 85px;
-    top: 8px;
+    top: 65px;
   }
 
   .ellipse3 {
@@ -59,6 +59,9 @@
   flex-direction: column;
   margin-top: 50px;
   width: 100%;
+  left: -15px;
+  top: -10px;
+  position: relative;
 }
 
 .services__card {
