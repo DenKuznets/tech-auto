@@ -1,18 +1,27 @@
-#advantages {
-  // background: url(../../img/masks/hero-mask.svg);
+#advantages{
+  display: flex;
+  justify-content: center;
+  min-height: unset;
+  // padding-bottom: 50px;
+}
+.advantages__cards {
+  display: flex;
+  flex: 1;
+  // align-items: flex-start;
+  justify-content: space-between;
+  min-height: auto;
+  // padding: 100px 0 50px 0;
+  // gap: 30px;
+  max-width: 1290px;
+}
+
+.card {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  min-height: auto;
-  padding: 100px 0 50px 0;
-  gap: 30px;
-  .card {
-    display: flex;
-    max-width: 420px;
-    align-items: flex-start;   
-    gap: 16px;
-    h4{
-      margin-top: 8px;
-    }
+  gap: 16px;
+  
+  h4 {
+    margin-top: 8px;
+    max-width: 320px;
   }
 }
