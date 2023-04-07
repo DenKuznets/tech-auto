@@ -40,15 +40,19 @@ let mask = IMask(element, maskOptions);
 const burger = document.querySelector(".burger");
 
 // YANDEX MAPS
+const yandexMap = document.getElementById('ymaps');
 (() => {
   ymaps
     .load("https://api-maps.yandex.ru/2.1/?lang=ru_RU")
     .then((maps) => {
+      const mapContainer = document.createElement("div");
+      mapContainer.style.height = "500px";
+      mapContainer.style.width = "740px";
       const map = new maps.Map(
-        "map",
+        mapContainer,
         {
           // 51.367258, 42.078642
-          center: [51.367258, 42.078642],
+          center: [56.237432, 44.002465],
           zoom: 16,
         },
         { yandexMapDisablePoiInteractivity: true },
@@ -77,6 +81,7 @@ const burger = document.querySelector(".burger");
       //     }
       // );
       map.geoObjects.add(myPlacemark);
+      yandexMap.appendChild(mapContainer)
     })
     .catch((error) => console.log("Failed to load Yandex Maps", error));
 })();

@@ -74,6 +74,8 @@
 .contacts__map {
   max-width: 740px;
   position: relative;
+  width: 740px;
+  // outline: 1px solid red;
 
   img {
     width: 100%;
@@ -85,4 +87,9 @@
   right: -0.2vw;
   top: -8vh;
   opacity: 0.8;
+}
+
+#ymaps {
+  width: 100%;
+  height: auto;
 }
