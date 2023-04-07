@@ -1,6 +1,9 @@
 .nav {
   display: flex;
   column-gap: 60px;
+  @media (min-width: $px768) {
+    display: none;
+  }
 
   &__list {
     &-header {
