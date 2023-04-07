@@ -6,9 +6,17 @@ import ymaps from "ymaps";
 // нажатие кнопки Оставить заявку на главной
 const heroBtn = document.getElementById("hero-btn");
 heroBtn.addEventListener("click", function () {
-  document.getElementById("popup").classList.add("popup-show");
-  document.body.classList.add("modal-open");
+  openPopup();
 });
+
+// нажатие кнопки оставить заявку в Услугах
+const servBtns = document.querySelectorAll(".services__card__btn-cta");
+for (let btn of servBtns) {
+  btn.addEventListener('click', function () {
+    openPopup();
+  })
+}
+
 
 // закрытие попапа по кнопке
 const popupBtn = document.getElementById("popup__close-btn");
@@ -23,6 +31,12 @@ document.getElementById("popup").addEventListener("click", function (e) {
   }
 });
 
+// открытие попапа
+function openPopup() {
+  document.getElementById("popup").classList.add("popup-show");
+  document.body.classList.add("modal-open");
+}
+
 // закрыть попап
 function closePopup() {
   document.getElementById("popup").classList.remove("popup-show");
@@ -36,8 +50,6 @@ let maskOptions = {
 };
 let mask = IMask(element, maskOptions);
 
-// бурег нажатие
-const burger = document.querySelector(".burger");
 
 // YANDEX MAPS
 const yandexMap = document.getElementById('ymaps');
@@ -85,3 +97,7 @@ const yandexMap = document.getElementById('ymaps');
     })
     .catch((error) => console.log("Failed to load Yandex Maps", error));
 })();
+
+
+// бурег нажатие
+const burger = document.querySelector(".burger");
