@@ -42,8 +42,7 @@ body {
     font-family: 'Open Sans';
     background: #00110A;
     color: #fff;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;    
 }
 
 h1,
@@ -198,11 +197,22 @@ body.modal-open {
 }
 
 .swiper {
-    width: 90%;
-    height: 500px;
-    outline: 1px solid red;
+    /* background-color: aquamarine; */
+    /* width: 500px; */
+    // height: 500px;
 }
 
-.swiper-slide {    
-    outline: 1px solid green;
+.myDiv {
+    /* max-width: 600px; */
+}
+
+.swiper-slide {}
+
+.mySlide {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }

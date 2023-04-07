@@ -1,10 +1,5 @@
 #certificate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding-bottom: 45px;
-
   h2 {
     margin-top: 90px;
     margin-bottom: 45px;
@@ -16,9 +11,14 @@
   }
 }
 
-.certificate__cards {
+.certificate__content {
   max-width: 1290px;
+  margin: 0 auto;
+}
+
+.certificate__card {
   display: flex;
-  gap: 30px;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

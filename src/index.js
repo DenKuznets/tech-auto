@@ -2,7 +2,35 @@ import "./index.html";
 import "./index.scss";
 import IMask from "imask";
 import ymaps from "ymaps";
-import Swiper, { Autoplay, Navigation } from "swiper";
+import Swiper, { Navigation, Pagination } from "swiper";
+// import styles bundle
+import "swiper/css/bundle";
+
+// SWIPER
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // direction: "vertical",
+  // loop: true,
+  slidesPerView: 4,
+  modules: [Navigation],
+  spaceBetween: 30,
+
+  // If we need pagination
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
 
 // нажатие кнопки Оставить заявку на главной
 const heroBtn = document.getElementById("hero-btn");
@@ -96,48 +124,6 @@ const yandexMap = document.getElementById("ymaps");
     })
     .catch((error) => console.log("Failed to load Yandex Maps", error));
 })();
-
-// SWIPER
-// Слайдер на первом экране
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: "vertical",
-  // loop: true,
-  modules: [Navigation],
-  allowTouchMove: true,
-  spaceBetween: 10,
-  slidesPerView: 4,
-
-  // If we need pagination
-  // pagination: {
-  //   el: ".swiper-pagination",
-  // },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
-  breakpoints: {
-    360: {
-      slidesPerView: 1,
-      // loop: false,
-    },
-    480: {
-      slidesPerView: 2,
-      // loop: false,
-    },
-    640: {
-      slidesPerView: 4,
-      // spaceBetween: 40,
-    },
-  },
-});
 
 // бурег нажатие
 const burger = document.querySelector(".burger");
