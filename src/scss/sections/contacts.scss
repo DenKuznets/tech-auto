@@ -69,6 +69,12 @@
   gap: 32px;
   align-items: center;
   margin-top: 40px;
+  transition: all 0.2s;
+  img {
+    &:hover{
+      opacity: 0.95;
+    }
+  }
 }
 
 .contacts__map {
