@@ -33,8 +33,9 @@
       margin-right: 50px;
     }
   }
-
+  
   .header__top-contacts-phone {
+    transition: all 0.2s;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
