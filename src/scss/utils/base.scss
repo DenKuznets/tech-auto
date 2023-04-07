@@ -28,6 +28,10 @@
     border: 10px solid rgb(136 136 136);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     overflow-x: hidden;
@@ -39,6 +43,7 @@ body {
     background: #00110A;
     color: #fff;
     padding-bottom: 20px;
+    
 }
 
 h1,
@@ -163,7 +168,7 @@ a {
 
 .dot {
     position: absolute;
-    display: none;
+    // display: none;
 
     @media (min-width: $px1920) {
         display: block;
