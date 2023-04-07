@@ -2,6 +2,7 @@ import "./index.html";
 import "./index.scss";
 import IMask from "imask";
 import ymaps from "ymaps";
+import Swiper, { Autoplay, Navigation } from "swiper";
 
 // нажатие кнопки Оставить заявку на главной
 const heroBtn = document.getElementById("hero-btn");
@@ -97,6 +98,29 @@ const yandexMap = document.getElementById('ymaps');
     })
     .catch((error) => console.log("Failed to load Yandex Maps", error));
 })();
+
+// SWIPER
+// Слайдер на первом экране
+if (document.querySelector('.firstScreenSwiper')) {
+    const swiper = new Swiper('.firstScreenSwiper', {
+        modules: [Navigation],
+        allowTouchMove: true,
+        spaceBetween: 10,
+        slidesPerView: 1.1,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            541: {
+                slidesPerView: 1,
+                loop: false,
+            }
+        }
+    });
+}
+
 
 
 // бурег нажатие
