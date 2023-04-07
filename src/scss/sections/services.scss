@@ -75,19 +75,33 @@
   width: 1365px;
 
   &__btn-cta {
-    transition: all 0.2s;
     display: none;
     width: 181px;
     height: 55px;
-    background: #FFFFFF;
     border-radius: 8px;
-    color: #00AE31;
+    border: 1px solid #00AE31;
     font-family: 'Alumni Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
     cursor: pointer;
+    // ГРАДИЕНТ ДЛЯ ТЕКСТА
+    background: -webkit-linear-gradient(93.58deg,
+        #00AA30 0%,
+        #00D03A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    &:hover {
+      background: #FFFFFF;
+      color: #00AE31;
+      background-clip:inherit;
+      -webkit-background-clip: inherit;
+      -webkit-text-fill-color: inherit;
+      border: none;
+    }
   }
 
   &:hover {
@@ -95,7 +109,6 @@
 
     button {
       display: block;
-      right: -20px;
     }
   }
 }
@@ -104,4 +117,12 @@
   top: -13.5vh;
   right: 0.8vw;
   opacity: 0.6;
+}
+
+.btn-bg {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  height: 55px;
+  position: relative;
+  right: -20px;
 }
