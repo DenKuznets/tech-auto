@@ -196,3 +196,13 @@ body.modal-open {
     height: 100vh;
     overflow-y: hidden;
 }
+
+.swiper {
+    width: 90%;
+    height: 500px;
+    outline: 1px solid red;
+}
+
+.swiper-slide {    
+    outline: 1px solid green;
+}

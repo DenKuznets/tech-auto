@@ -13,11 +13,10 @@ heroBtn.addEventListener("click", function () {
 // нажатие кнопки оставить заявку в Услугах
 const servBtns = document.querySelectorAll(".services__card__btn-cta");
 for (let btn of servBtns) {
-  btn.addEventListener('click', function () {
+  btn.addEventListener("click", function () {
     openPopup();
-  })
+  });
 }
-
 
 // закрытие попапа по кнопке
 const popupBtn = document.getElementById("popup__close-btn");
@@ -51,9 +50,8 @@ let maskOptions = {
 };
 let mask = IMask(element, maskOptions);
 
-
 // YANDEX MAPS
-const yandexMap = document.getElementById('ymaps');
+const yandexMap = document.getElementById("ymaps");
 (() => {
   ymaps
     .load("https://api-maps.yandex.ru/2.1/?lang=ru_RU")
@@ -94,34 +92,52 @@ const yandexMap = document.getElementById('ymaps');
       //     }
       // );
       map.geoObjects.add(myPlacemark);
-      yandexMap.appendChild(mapContainer)
+      yandexMap.appendChild(mapContainer);
     })
     .catch((error) => console.log("Failed to load Yandex Maps", error));
 })();
 
 // SWIPER
 // Слайдер на первом экране
-if (document.querySelector('.firstScreenSwiper')) {
-    const swiper = new Swiper('.firstScreenSwiper', {
-        modules: [Navigation],
-        allowTouchMove: true,
-        spaceBetween: 10,
-        slidesPerView: 1.1,
-        loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            541: {
-                slidesPerView: 1,
-                loop: false,
-            }
-        }
-    });
-}
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  // direction: "vertical",
+  // loop: true,
+  modules: [Navigation],
+  allowTouchMove: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
 
+  // If we need pagination
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
 
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+  breakpoints: {
+    360: {
+      slidesPerView: 1,
+      // loop: false,
+    },
+    480: {
+      slidesPerView: 2,
+      // loop: false,
+    },
+    640: {
+      slidesPerView: 4,
+      // spaceBetween: 40,
+    },
+  },
+});
 
 // бурег нажатие
 const burger = document.querySelector(".burger");
