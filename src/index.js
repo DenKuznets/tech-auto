@@ -9,7 +9,7 @@ heroBtn.addEventListener('click', function () {
   document.body.classList.add('modal-open')
 })
 
-// нажатие кнопки закрытия формы попапа
+// закрытие попапа по кнопке
 const popupBtn = document.getElementById("popup__close-btn");
 popupBtn.addEventListener("click", function () {
   closePopup();

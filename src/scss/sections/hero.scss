@@ -6,6 +6,10 @@
   padding-bottom: 100px;
   position: relative;
 
+  @media (max-width: $px1024) {
+    gap: 20px;
+  }
+
 
   .ellipse2 {
     left: 99px;
@@ -20,16 +24,21 @@
 
 .hero__text {
   margin-top: 150px;
+
+  @media (max-width: $px1024) {
+    margin-top: 93px;
+  }
+
   flex: 1;
   max-width: 639px;
 
   h1 {
-    font-family: 'Alumni Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 72px;
     margin-bottom: 40px;
+
+    @media (max-width: $px1024) {
+      margin-bottom: 32px;
+    }
+
   }
 
   p {
@@ -39,7 +48,7 @@
     font-size: 17px;
     line-height: 140%;
     margin-bottom: 40px;
-  }  
+  }
 }
 
 
@@ -51,6 +60,11 @@
     position: relative;
     width: 100%;
     height: auto;
+
+    @media (max-width: $px1024) {
+      height: 500px;
+      object-fit: cover;
+    }
   }
 }
 

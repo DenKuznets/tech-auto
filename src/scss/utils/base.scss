@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +38,7 @@ body {
     font-family: 'Open Sans';
     background: #00110A;
     color: #fff;
+    padding-bottom: 20px;
 }
 
 h1,
@@ -56,6 +59,12 @@ h1 {
     font-size: 60px;
     line-height: 72px;
     letter-spacing: 0.7px;
+
+    @media (max-width: $px1024) {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
 }
 
 h2 {
@@ -141,14 +150,20 @@ a {
     filter: blur(250px);
 }
 
-.ellipse2, .ellipse3, .ellipse4 {
+.ellipse2,
+.ellipse3,
+.ellipse4 {
     filter: blur(300px);
 }
 
 
 .dot {
     position: absolute;
-    // z-index: -1;
+    display: none;
+
+    @media (min-width: $px1920) {
+        display: block;
+    }
 }
 
 .btn-cta {
