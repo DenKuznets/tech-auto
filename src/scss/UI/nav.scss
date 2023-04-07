@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   column-gap: 60px;
-  @media (min-width: $px768) {
+  @media (max-width: $px768) {
     display: none;
   }
 
@@ -11,7 +11,6 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 44px;
-        color: #fff;
         transition: all .15s ease;
       }
     }

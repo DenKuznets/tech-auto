@@ -5,7 +5,7 @@
     cursor: pointer;
     background-color: #00110A;
 
-    @media (min-width: $px768) {
+    @media (max-width: $px768) {
         display: block;
     }
 }

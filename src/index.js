@@ -36,5 +36,8 @@ let maskOptions = {
 };
 let mask = IMask(element, maskOptions);
 
+// бурег нажатие
+const burger = document.querySelector('.burger');
+
 
 
