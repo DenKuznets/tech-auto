@@ -34,23 +34,17 @@ const swiper = new Swiper(".swiper", {
 
 // нажатие кнопки Оставить заявку на главной
 const heroBtn = document.getElementById("hero-btn");
-heroBtn.addEventListener("click", function () {
-  openPopup();
-});
+heroBtn.addEventListener("click", openPopup);
 
 // нажатие кнопки оставить заявку в Услугах
 const servBtns = document.querySelectorAll(".services__card__btn-cta");
 for (let btn of servBtns) {
-  btn.addEventListener("click", function () {
-    openPopup();
-  });
+  btn.addEventListener("click", openPopup);
 }
 
 // закрытие попапа по кнопке
 const popupBtn = document.getElementById("popup__close-btn");
-popupBtn.addEventListener("click", function () {
-  closePopup();
-});
+popupBtn.addEventListener("click", closePopup);
 
 // закрытие попапа по клику мимо
 document.getElementById("popup").addEventListener("click", function (e) {
@@ -125,11 +119,34 @@ const yandexMap = document.getElementById("ymaps");
     .catch((error) => console.log("Failed to load Yandex Maps", error));
 })();
 
-// бурег нажатие
+// бургер нажатие
 const burger = document.querySelector(".burger");
-// console.log(burger);
-burger.addEventListener('click', function () {
-  const nav = document.querySelector(".header__top-nav");
-  // console.log(nav);
-  nav.classList.add('mobile-nav-active');
-})
+const closeBtn = document.querySelector(".mobile-menu__close-btn");
+burger.addEventListener("click", openMobileMenu);
+
+// кнопка закрыть мобильное меню нажатие
+closeBtn.addEventListener('click', closeMobileMenu)
+
+// ссылки в мобильном меню нажатие
+let mobileMenuAnchors = document.querySelectorAll(".nav__item-header");
+for (let anchor of mobileMenuAnchors) {
+  anchor.addEventListener('click', closeMobileMenu)
+}
+
+//закрыть мобильное меню
+function closeMobileMenu() {
+  const nav = document.querySelector(".nav__list-header");
+  nav.classList.remove("mobile-nav-active");
+  burger.style.display = "block";
+  closeBtn.style.display = "none";
+  // document.body.classList.remove("modal-open");
+}
+
+// открыть мобильное меню
+function openMobileMenu() {
+  const nav = document.querySelector(".nav__list-header");
+  nav.classList.add("mobile-nav-active");
+  burger.style.display = "none";
+  closeBtn.style.display = "block";
+  // document.body.classList.add("modal-open");
+}
