@@ -1,21 +1,36 @@
-.nav {
+.header__top-nav {
   display: flex;
-  column-gap: 60px;
+  justify-content: space-between;
+  max-width: 617px;
+  width: 100%;
+}
 
+.nav__list-header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 10px;
+  max-height: 200px;
   @media (max-width: $px768) {
-    display: none;
-  }
-
-  &__list {
-    &-header {
-      a {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 44px;
-        transition: all .15s ease;
-      }
+      display: none;
+      max-height: 0;
+      overflow: hidden;
     }
-  }
+  a {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 44px;
+      transition: all .15s ease;
+    }
+}
+
+.nav__item-header {
+  white-space: nowrap;
+}
+
+.header__top-contacts-phone {
+  white-space: nowrap;
 }
 
 .nav__list-footer {

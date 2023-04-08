@@ -127,3 +127,9 @@ const yandexMap = document.getElementById("ymaps");
 
 // бурег нажатие
 const burger = document.querySelector(".burger");
+// console.log(burger);
+burger.addEventListener('click', function () {
+  const nav = document.querySelector(".header__top-nav");
+  // console.log(nav);
+  nav.classList.add('mobile-nav-active');
+})
