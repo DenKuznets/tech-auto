@@ -42,12 +42,12 @@
     }
 
     @media (max-width: $px480) {
-      margin-right: 10px;
+      margin-right: 45px;
     }
 
     @media (max-width: $px360) {
       display: none;
-
+      margin-right: 10px;
     }
   }
 

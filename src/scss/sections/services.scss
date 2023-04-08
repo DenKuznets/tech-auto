@@ -26,6 +26,11 @@
   position: relative;
   left: 20px;
 
+  @media (max-width: $px480) {
+    text-align: center;
+    left: unset;
+  }
+
   h2 {
     font-family: 'Alumni Sans';
     font-style: normal;
@@ -34,6 +39,9 @@
     line-height: 58px;
     padding-left: 15px;
 
+    @media (max-width: $px480) {
+      padding-left: unset;
+    }
   }
 
   h4 {
@@ -78,6 +86,11 @@
   left: -15px;
   top: -10px;
   position: relative;
+
+  @media (max-width: $px480) {
+    left: unset;
+    top: unset;
+  }
 }
 
 .services__card {
@@ -166,5 +179,8 @@
     margin-top: 40px;
   }
 
-  // right: -20px;
+  @media (max-width: $px480) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
