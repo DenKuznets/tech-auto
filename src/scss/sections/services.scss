@@ -18,6 +18,13 @@
     left: 961px;
     top: 744px;
   }
+}
+
+.services__content {
+  width: 100%;
+  max-width: 1350px;
+  position: relative;
+  left: 20px;
 
   h2 {
     font-family: 'Alumni Sans';
@@ -26,6 +33,7 @@
     font-size: 48px;
     line-height: 58px;
     padding-left: 15px;
+
   }
 
   h4 {
@@ -36,6 +44,7 @@
     line-height: 140%;
     max-width: 410px;
     min-width: 410px;
+    margin-right: 40px;
   }
 
   p {
@@ -47,11 +56,6 @@
     line-height: 140%;
     // outline: 1px solid red;
   }
-}
-
-.services__content {
-  width: 100%;
-  max-width: 1317px;
 }
 
 .services__cards {
@@ -66,16 +70,16 @@
 
 .services__card {
   display: flex;
-  gap: 40px;
+  // gap: 40px;
   padding: 20px 30px;
   width: 100%;
   transition: all 0.2s;
   border-radius: 8px;
   position: relative;
-  width: 1365px;
+  // width: 1365px;  
 
   &__btn-cta {
-    display: none;
+    display: block;
     width: 181px;
     height: 55px;
     border-radius: 8px;
@@ -93,11 +97,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     &:hover {
       background: #FFFFFF;
       color: #00AE31;
-      background-clip:inherit;
+      background-clip: inherit;
       -webkit-background-clip: inherit;
       -webkit-text-fill-color: inherit;
       border: none;
@@ -107,8 +111,24 @@
   &:hover {
     background: #00AE31;
 
-    button {
-      display: block;
+    .btn-bg {
+      visibility: visible;
+    }
+  }
+}
+
+.services__card-text {
+  display: flex;
+  margin-right: auto;
+  @media (max-width: $px1024) {
+    flex-direction: column;
+    max-width: 683px;
+    gap: 40px;
+    h4, p {
+      max-width: unset;
+      br{
+        display: none;
+      }
     }
   }
 }
@@ -120,9 +140,10 @@
 }
 
 .btn-bg {
+  visibility: hidden;
   background-color: #FFFFFF;
   border-radius: 8px;
   height: 55px;
   position: relative;
-  right: -20px;
+  // right: -20px;
 }
