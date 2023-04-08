@@ -16,6 +16,10 @@
   @media (max-width: $px1024) {
     left: 0;
   }
+  @media (max-width: $px768) {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .advantages__card {
@@ -28,10 +32,20 @@
     flex-direction: column;
     max-width: 300px;
   }
+  @media (max-width: $px768) {
+    flex-direction: row;
+    // max-width: 300px;
+    max-width: unset;
+    width: 100%;
+  }
 
   h4 {
     margin-top: 5px;
     max-width: 320px;
+    @media (max-width: $px768) {
+        width: 100%;
+        max-width: unset;
+      }
   }
 }
 
