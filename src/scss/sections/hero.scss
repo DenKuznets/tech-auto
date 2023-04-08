@@ -1,10 +1,5 @@
 #hero {
-  display: flex;
-  justify-content: center;
-  gap: 101px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  position: relative;
+
 
   @media (max-width: $px1024) {
     gap: 20px;
@@ -21,15 +16,34 @@
   }
 }
 
+.hero__content {
+  display: flex;
+  justify-content: center;
+  gap: 101px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  position: relative;
+  @media (max-width: $px768) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+  }
+}
+
 .hero__text {
   margin-top: 150px;
-
+  flex: 1;
+  max-width: 639px;
+  
   @media (max-width: $px1024) {
     margin-top: 93px;
   }
+  @media (max-width: $px768) {
+    margin-top: 30px;
+    max-width: unset;
+  }
 
-  flex: 1;
-  max-width: 639px;
 
   h1 {
     margin-bottom: 40px;
@@ -37,7 +51,6 @@
     @media (max-width: $px1024) {
       margin-bottom: 32px;
     }
-
   }
 
   p {
@@ -55,10 +68,15 @@
   flex: 1;
   max-width: 550px;
 
+  @media (max-width: $px768) {
+    width: 100%;
+    max-width: unset;
+  }
   img {
     position: relative;
     width: 100%;
     height: auto;
+    border-radius: 8px;
 
     @media (max-width: $px1024) {
       height: 500px;

@@ -42,7 +42,7 @@ body {
     font-family: 'Open Sans';
     background: #00110A;
     color: #fff;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
 }
 
 h1,
@@ -68,6 +68,13 @@ h1 {
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
+    }
+
+    @media (max-width: $px768) {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
     }
 }
 
@@ -101,6 +108,7 @@ body.lock {
 a {
     text-decoration: none;
     color: #fff;
+
     &:hover {
         color: #00AE31;
     }
@@ -111,16 +119,16 @@ a {
     min-width: 300px;
     margin: 0 auto;
 
-
     @media (max-width: 1460px) {
         padding-right: 30px;
         padding-left: 30px;
+
+        @media (max-width: 1024px) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
     }
 
-    @media (max-width: 1024px) {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
 }
 
 .container-fluid {
@@ -167,10 +175,9 @@ a {
 
 .dot {
     position: absolute;
-    // display: none;
 
-    @media (min-width: $px1920) {
-        display: block;
+    @media (max-width: $px1024) {
+        display: none;
     }
 }
 
@@ -186,6 +193,7 @@ a {
     line-height: 29px;
     color: #fff;
     transition: all 0.4s;
+
     &:hover {
         background: linear-gradient(273.58deg, #008024 0%, #00AE31 100%);
     }
@@ -196,23 +204,10 @@ body.modal-open {
     overflow-y: hidden;
 }
 
-.swiper {
-    /* background-color: aquamarine; */
-    /* width: 500px; */
-    // height: 500px;
-}
-
-.myDiv {
-    /* max-width: 600px; */
-}
-
-.swiper-slide {}
-
 .mySlide {
     background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-
 }

@@ -3,4 +3,7 @@
   min-height: 500px;
   position: relative;
   padding: 0 30px;
+      @media (max-width: $px768) {
+        padding: 0 19px;
+      }
 }
