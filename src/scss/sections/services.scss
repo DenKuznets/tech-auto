@@ -45,6 +45,15 @@
     max-width: 410px;
     min-width: 410px;
     margin-right: 40px;
+
+    @media (max-width: $px1024) {
+      max-width: unset;
+    }
+
+    @media (max-width: $px768) {
+      min-width: unset;
+      margin-right: unset;
+    }
   }
 
   p {
@@ -54,7 +63,10 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 140%;
-    // outline: 1px solid red;
+
+    @media (max-width: $px1024) {
+      max-width: unset;
+    }
   }
 }
 
@@ -70,13 +82,16 @@
 
 .services__card {
   display: flex;
-  // gap: 40px;
   padding: 20px 30px;
   width: 100%;
   transition: all 0.2s;
   border-radius: 8px;
   position: relative;
-  // width: 1365px;  
+
+  @media (max-width: $px768) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   &__btn-cta {
     display: block;
@@ -120,18 +135,18 @@
 .services__card-text {
   display: flex;
   margin-right: auto;
+
   @media (max-width: $px1024) {
     flex-direction: column;
     max-width: 683px;
     gap: 40px;
-    h4, p {
-      max-width: unset;
-      br{
-        display: none;
-      }
+
+    br {
+      display: none;
     }
   }
 }
+
 
 .services-dot1 {
   top: -8.6vh;
@@ -145,5 +160,11 @@
   border-radius: 8px;
   height: 55px;
   position: relative;
+
+  @media (max-width: $px768) {
+    visibility: visible;
+    margin-top: 40px;
+  }
+
   // right: -20px;
 }
