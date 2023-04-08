@@ -38,6 +38,13 @@
     @media (max-width: $px768) {
       margin-right: 50px;
     }
+    @media (max-width: $px480) {
+      margin-right: 10px;
+    }
+    @media (max-width: $px360) {
+      display: none;
+
+    }
   }
   
   .header__top-contacts-phone {
