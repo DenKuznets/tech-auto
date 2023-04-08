@@ -76,6 +76,19 @@ h1 {
         line-height: 72px;
         text-align: center;
     }
+
+    @media (max-width: $px480) {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+    }
+
+    @media (max-width: $px360) {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
 }
 
 h2 {
