@@ -21,6 +21,10 @@
   padding-top: 80px;
   padding-bottom: 100px;
   position: relative;
+  @media (max-width: $px1024) {
+    gap: 20px;
+  }
+  
   @media (max-width: $px768) {
     flex-direction: column;
     align-items: center;
