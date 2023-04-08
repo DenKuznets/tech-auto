@@ -5,24 +5,26 @@
   width: 100%;
 }
 
-.nav__list-header{
+.nav__list-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin: auto;
   padding: 0 10px;
   max-height: 200px;
+
   @media (max-width: $px768) {
-      display: none;
-      max-height: 0;
-      overflow: hidden;
-    }
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+  }
+
   a {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 44px;
-      transition: all .15s ease;
-    }
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 44px;
+    transition: all .15s ease;
+  }
 }
 
 .nav__item-header {
@@ -34,6 +36,9 @@
 }
 
 .nav__list-footer {
+  display: flex;
+  column-gap: 60px;
+
   a {
     font-weight: 500;
     font-size: 20px;
