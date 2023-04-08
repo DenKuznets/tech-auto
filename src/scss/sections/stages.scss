@@ -1,19 +1,38 @@
 #stages {
   display: flex;
   justify-content: center;
-    @media (max-width: $px1024) {
-      justify-content: flex-start;
-    }
-  h2{
-    margin-bottom: 40px;
+
+  @media (max-width: $px1024) {
+    justify-content: flex-start;
   }
-  h4{
+
+  h2 {
+    margin-bottom: 40px;
+
+    @media (max-width: $px480) {
+      text-align: center;
+    }
+  }
+
+  h4 {
     margin-bottom: 30px;
+
+    br {
+      display: none;
+
+      @media (max-width: $px360) {
+        display: block;
+      }
+    }
   }
 }
 
 .stages__content {
   padding-top: 75px;
+
+  @media (max-width: $px480) {
+    padding-top: 90px;
+  }
 }
 
 .stages__cards {
@@ -23,6 +42,7 @@
   max-width: 1290px;
   row-gap: 50px;
   column-gap: 50px;
+
   @media (max-width: $px1024) {
     display: flex;
     flex-direction: column;
