@@ -12,6 +12,10 @@
   max-width: 1290px;
   position: relative;
   left: -20px;
+
+  @media (max-width: $px1024) {
+    left: 0;
+  }
 }
 
 .advantages__card {
@@ -19,6 +23,11 @@
   align-items: flex-start;
   gap: 16px;
   position: relative;
+
+  @media (max-width: $px1024) {
+    flex-direction: column;
+    max-width: 300px;
+  }
 
   h4 {
     margin-top: 5px;
@@ -28,6 +37,12 @@
 
 .img-container {
   position: relative;
+  width: 60px;
+  height: 60px;
+
+  img {
+    max-width: unset;
+  }
 
   .blur {
     position: absolute;
