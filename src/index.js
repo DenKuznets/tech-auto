@@ -30,6 +30,23 @@ const swiper = new Swiper(".swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+  breakpoints: {
+    1919: {
+      slidesPerView: 4,
+    },
+    1023: {
+      slidesPerView: 3,
+    },
+    767: {
+      slidesPerView: 2.4,
+    },
+    479: {
+      slidesPerView: 1.5,
+    },
+    359: {
+      slidesPerView: 1.2,
+    },
+  }
 });
 
 // нажатие кнопки Оставить заявку на главной
@@ -79,8 +96,10 @@ const yandexMap = document.getElementById("ymaps");
     .load("https://api-maps.yandex.ru/2.1/?lang=ru_RU")
     .then((maps) => {
       const mapContainer = document.createElement("div");
-      mapContainer.style.height = "500px";
-      mapContainer.style.width = "740px";
+
+      mapContainer.style.height = "100%";
+      mapContainer.style.width = "100%";
+      mapContainer.id = 'mapContainer';
       const map = new maps.Map(
         mapContainer,
         {

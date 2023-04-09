@@ -3,6 +3,9 @@
   h2 {
     margin-top: 90px;
     margin-bottom: 45px;
+    @media (max-width: $px480) {
+      text-align: center;
+    }
   }
 
   .ellipse2 {
