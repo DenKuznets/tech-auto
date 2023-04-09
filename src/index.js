@@ -34,19 +34,20 @@ const swiper = new Swiper(".swiper", {
     1919: {
       slidesPerView: 4,
     },
-    1023: {
+    780: {
       slidesPerView: 3,
     },
-    767: {
+    700: {
       slidesPerView: 2.4,
+      spaceBetween: 50,
     },
-    479: {
+    450: {
       slidesPerView: 1.5,
     },
     359: {
       slidesPerView: 1.2,
     },
-  }
+  },
 });
 
 // нажатие кнопки Оставить заявку на главной
