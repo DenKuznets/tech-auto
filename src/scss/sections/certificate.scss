@@ -1,8 +1,9 @@
 #certificate {
   padding-bottom: 45px;
-      @media (max-width: $px768) {
-        padding-right: 0;
-      }
+
+  @media (max-width: $px768) {
+    padding-right: 0;
+  }
 
   h2 {
     margin-top: 90px;
@@ -14,8 +15,8 @@
   }
 
   .ellipse2 {
-    left: 1398px;
-    top: 98px;
+    right: 13%;
+    top: 1%;
   }
 }
 

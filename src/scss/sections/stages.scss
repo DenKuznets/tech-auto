@@ -1,6 +1,13 @@
 #stages {
   display: flex;
   justify-content: center;
+  position: relative;
+
+  .ellipse4 {
+    left: 48%;
+    top: 32%;
+
+  }
 
   @media (max-width: $px1024) {
     justify-content: flex-start;

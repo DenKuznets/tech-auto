@@ -21,15 +21,16 @@
 
   p {
     position: relative;
+
     @media (max-width: $px480) {
-        text-align: center;
-      }
-    
+      text-align: center;
+    }
+
   }
 
   .ellipse2 {
-    left: 380px;
-    top: 229px;
+    left: 20%;
+    top: 60%;
   }
 }
 
@@ -86,20 +87,21 @@
     height: auto;
     border-radius: 8px;
     object-position: 0 0;
-    
+
     @media (max-width: $px1024) {
       object-fit: cover;
       height: 406px;
     }
-    
+
     @media (max-width: $px768) {
       height: 500px;
     }
-    
+
     @media (max-width: $px480) {
       height: 400px;
       object-position: 40% 0%;
     }
+
     @media (max-width: $px360) {
       height: 300px;
       object-position: 40% 0%;
