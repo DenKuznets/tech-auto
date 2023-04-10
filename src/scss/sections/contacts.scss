@@ -3,23 +3,35 @@
   position: relative;
   padding-top: 45px;
   padding-bottom: 50px;
-  // @media (max-width: ${screen.screen768}) {
-  //   flex-direction: column;
-  //   padding: 0 15px;
-  // }
   justify-content: center;
+  width: 100%;
+
+  @media (max-width: $px1024) {
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .contacts__content {
   display: flex;
   max-width: 1290px;
   gap: 30px;
+  width: 100%;
+
+  @media (max-width: $px1024) {
+    flex-direction: column;
+  }
 }
 
-.contacts-container {
+.contacts-text {
   h2 {
     margin-top: 40px;
     margin-bottom: 45px;
+
+    @media (max-width: $px480) {
+      text-align: center;
+    }
   }
 
   // @media (max-width: ${screen.screen768}) {
@@ -41,6 +53,13 @@
   display: flex;
   gap: 15px;
 
+  @media (max-width: $px360) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
   p {
     min-width: 135px;
     color: #AEC4B4;
@@ -53,7 +72,6 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 120%;
-
   }
 
   span {
@@ -61,6 +79,10 @@
     display: flex;
     flex-direction: column;
     gap: 11px;
+
+    @media (max-width: $px1024) {
+      max-width: unset;
+    }
   }
 }
 
@@ -70,8 +92,13 @@
   align-items: center;
   margin-top: 40px;
   transition: all 0.2s;
+
+  @media (max-width: $px480) {
+    justify-content: center;
+  }
+
   img {
-    &:hover{
+    &:hover {
       opacity: 0.95;
     }
   }
@@ -80,13 +107,16 @@
 .contacts__map {
   max-width: 740px;
   position: relative;
-  width: 740px;
-  // outline: 1px solid red;
+  width: 100%;
 
-  img {
+  // outline: 1px solid red;
+  @media (max-width: $px1024) {
+    max-width: unset;
     width: 100%;
-    height: auto;
+    height: 500px;
   }
+
+
 }
 
 .contacts-dot1 {
@@ -97,5 +127,8 @@
 
 #ymaps {
   width: 100%;
-  height: auto;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
 }

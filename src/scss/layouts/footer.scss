@@ -1,11 +1,15 @@
 footer {
     display: flex;
-    // justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 40px;
     gap: 20px;
-    padding-bottom: 20px;
+    padding: 40px 30px 20px 30px;
+    position: relative;
+
+    @media (max-width: $px768) {
+        min-height: 307px;
+        padding-top: 110px;
+    }
 }
 
 .footer-top,
@@ -24,5 +28,65 @@ footer {
         font-weight: 400;
         font-size: 15px;
         line-height: 140%;
+    }
+}
+
+.footer-top__logo-container {
+    @media (max-width: $px768) {
+        position: absolute;
+    }
+
+    @media (max-width: $px480) {
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+#rights {
+    @media (max-width: $px768) {
+        position: absolute;
+        top: 169px;
+        left: 29px;
+    }
+
+    @media (max-width: $px480) {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    @media (max-width: $px480) {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#policy {
+    @media (max-width: $px768) {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 290px;
+    }
+
+    @media (max-width: $px480) {
+        top: 495px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#alexmedia {
+    @media (max-width: $px768) {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 330px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    @media (max-width: $px480) {
+        top: 560px;
     }
 }

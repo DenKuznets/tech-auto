@@ -12,11 +12,28 @@
   margin: auto;
   padding: 0 10px;
   max-height: 200px;
+  background-color: #00110A;
 
   @media (max-width: $px768) {
-    display: none;
     max-height: 0;
+    min-height: 0;
     overflow: hidden;
+    transition: all 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.mobile-nav-active {
+      min-height: 100vh;
+
+      .nav__item-header {
+        margin-bottom: 50px;
+      }
+    }
   }
 
   a {
@@ -38,6 +55,40 @@
 .nav__list-footer {
   display: flex;
   column-gap: 60px;
+
+  @media (max-width: $px768) {
+    padding-right: 21px;
+    position: absolute;
+    top: 230px;
+    width: 100%;
+    column-gap: 7%;
+    @media (max-width: $px480) {
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    li {
+      margin-right: auto;
+      @media (max-width: $px480) {
+        margin-right: unset;
+      }
+
+      a {
+        white-space: nowrap;
+
+        @media (max-width: $px480) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: $px480) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   a {
     font-weight: 500;

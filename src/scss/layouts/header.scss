@@ -5,8 +5,8 @@
   position: fixed;
   width: 100%;
   z-index: 999;
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
 
 
@@ -23,12 +23,14 @@
 
   &-logo {
     cursor: pointer;
+
     // flex: 1;
-    img{
+    img {
       width: 160px;
       height: 40px;
       max-width: unset;
     }
+
     @media (max-width: $px768) {
       margin-right: auto;
     }
@@ -38,8 +40,17 @@
     @media (max-width: $px768) {
       margin-right: 50px;
     }
+
+    @media (max-width: $px480) {
+      margin-right: 45px;
+    }
+
+    @media (max-width: $px360) {
+      display: none;
+      margin-right: 10px;
+    }
   }
-  
+
   .header__top-contacts-phone {
     transition: all 0.2s;
     font-style: normal;
@@ -49,13 +60,6 @@
   }
 }
 
-.burger {
-  img{
-    max-width: unset;
-    width: 40px;
-    height: 28px;
-  }
-}
 
 //.headerFixed.active {
 //    width: 100vw;

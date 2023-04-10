@@ -3,13 +3,28 @@
   justify-content: center;
   min-height: unset;
 
-  h2 {
+  @media (max-width: $px768) {
+    justify-content: flex-start;
+  }
 
+  h2 {
     margin-bottom: 50px;
+
+    @media (max-width: $px1024) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $px480) {
+      text-align: center;
+    }
   }
 
   p {
     position: relative;
+    @media (max-width: $px480) {
+        text-align: center;
+      }
+    
   }
 
   .ellipse2 {
@@ -23,22 +38,72 @@
   justify-content: center;
   max-width: 1290px;
   gap: 30px;
+
+  @media (max-width: $px1024) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: $px768) {
+    flex-direction: column;
+    margin-top: 55px;
+  }
 }
 
 .about__text {
   max-width: 630px;
   margin-top: 45px;
   flex: 1;
+
+  @media (max-width: $px1024) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: $px768) {
+    max-width: unset;
+  }
 }
 
 .about__image {
   flex: 1;
   margin-top: 25px;
-  width: 630px;
+  max-width: 630px;
+
+  @media (max-width: $px1024) {
+    height: 406px;
+
+  }
+
+  @media (max-width: $px768) {
+    max-width: unset;
+    margin-top: unset;
+    height: 500px;
+  }
+
 
   img {
+    position: relative;
     width: 100%;
     height: auto;
+    border-radius: 8px;
+    object-position: 0 0;
+    
+    @media (max-width: $px1024) {
+      object-fit: cover;
+      height: 406px;
+    }
+    
+    @media (max-width: $px768) {
+      height: 500px;
+    }
+    
+    @media (max-width: $px480) {
+      height: 400px;
+      object-position: 40% 0%;
+    }
+    @media (max-width: $px360) {
+      height: 300px;
+      object-position: 40% 0%;
+    }
   }
 }
 

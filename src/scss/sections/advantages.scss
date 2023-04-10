@@ -12,6 +12,20 @@
   max-width: 1290px;
   position: relative;
   left: -20px;
+
+  @media (max-width: $px1024) {
+    left: 0;
+  }
+
+  @media (max-width: $px768) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (max-width: $px480) {
+
+    gap: 23px;
+  }
 }
 
 .advantages__card {
@@ -19,19 +33,57 @@
   align-items: flex-start;
   gap: 16px;
   position: relative;
+  margin-right: 10px;
+
+  @media (max-width: $px1024) {
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  @media (max-width: $px768) {
+    flex-direction: row;
+    max-width: unset;
+    width: 100%;
+  }
+
+  @media (max-width: $px480) {
+    flex-direction: column;
+    max-width: unset;
+    width: 100%;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
 
   h4 {
     margin-top: 5px;
     max-width: 320px;
+
+    @media (max-width: $px768) {
+      width: 100%;
+      max-width: unset;
+    }
   }
 }
 
 .img-container {
   position: relative;
+  width: 60px;
+  height: 60px;
+
+  img {
+    max-width: unset;
+  }
 
   .blur {
     position: absolute;
     top: -18px;
     left: 16px;
+
+    @media (max-width: $px480) {
+      top: -53px;
+      left: -60px;
+    }
   }
 }
